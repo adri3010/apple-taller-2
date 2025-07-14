@@ -1,0 +1,161 @@
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: #f5f5f7;
+  color: #1d1d1f;
+  margin: 0;
+  padding: 0;
+}
+
+.nosotros-container {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 40px 20px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+}
+
+.nosotros-container h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: #000;
+  margin-bottom: 15px;
+}
+
+.nosotros-container p {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.contenido {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.texto {
+  flex: 1;
+  min-width: 280px;
+}
+
+.texto h2 {
+  font-size: 1.75rem;
+  margin-bottom: 10px;
+  color: #0071e3;
+}
+
+.texto p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.texto ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.texto ul li {
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #444;
+}
+
+.imagen {
+  flex: 1;
+  min-width: 280px;
+}
+
+.imagen img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #888;
+  background-color: #fafafa;
+  border-top: 1px solid #ddd;
+}
+
+
+.media-section {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-container h3,
+.iframe-container h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #0071e3;
+  font-weight: 700;
+  text-align: center;
+}
+
+.video-fab {
+  width: 100%;
+  max-width: 480px;
+  border-radius: 12px;
+  box-shadow: 0 8px 18px rgba(0, 113, 227, 0.3);
+  outline: none;
+}
+
+.iframe-container iframe {
+  width: 100%;
+  max-width: 480px;
+  height: 320px;
+  border-radius: 12px;
+  box-shadow: 0 8px 18px rgba(0, 113, 227, 0.3);
+  border: none;
+}
+
+/* Mejoras responsive */
+
+@media (max-width: 992px) {
+  .contenido {
+    flex-direction: column;
+  }
+
+  .texto, .imagen, .media-section {
+    min-width: 100%;
+  }
+
+  .video-fab, .iframe-container iframe {
+    max-width: 100%;
+    height: 240px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nosotros-container h1 {
+    font-size: 2.25rem;
+  }
+
+  .nosotros-container p,
+  .texto h2,
+  .video-container h3,
+  .iframe-container h3 {
+    font-size: 1.1rem;
+  }
+
+  .video-fab, .iframe-container iframe {
+    height: 180px;
+  }
+}
+
+
