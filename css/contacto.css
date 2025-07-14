@@ -10,7 +10,6 @@ body {
   padding: 0;
 }
 
-/* NAV ESTILO APPLE */
 nav {
   background-color: white;
   border-bottom: 1px solid #e0e0e0;
@@ -63,7 +62,7 @@ nav ul li a[aria-current="page"] {
   color: #0071e3;
 }
 
-/* FORMULARIO Y SECCIONES */
+
 main {
   max-width: 800px;
   margin: 40px auto;
@@ -138,7 +137,7 @@ form#formulario-registro button:hover {
   background-color: #005bb5;
 }
 
-/* BOTONES DE CONFIRMACIÓN */
+
 .botones-confirmacion {
   display: flex;
   justify-content: center;
@@ -198,7 +197,6 @@ form#formulario-registro button:hover {
   background-color: #e6f0ff;
 }
 
-/* MAPA */
 .mapa-contacto h2 {
   color: #0071e3;
   font-weight: 700;
@@ -206,7 +204,7 @@ form#formulario-registro button:hover {
   text-align: center;
 }
 
-/* FOOTER */
+
 .footer {
   text-align: center;
   padding: 20px;
@@ -217,7 +215,6 @@ form#formulario-registro button:hover {
   margin-top: 40px;
 }
 
-/* RESPONSIVE */
 @media (max-width: 480px) {
   main {
     margin: 20px 10px;
