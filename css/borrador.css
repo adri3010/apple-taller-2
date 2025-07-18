@@ -1,0 +1,244 @@
+/* ===== Estilos generales ===== */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #121212;
+  color: white;
+}
+
+/* ===== Barra de navegación (Nav) ===== */
+.barra-navegacion {
+  background-color: #000;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 15px #a855f7;
+}
+
+.contenedor-nav {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-navegacion {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.logo-navegacion img {
+  width: 35px;
+  margin-right: 10px;
+}
+
+.lista-enlaces {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.lista-enlaces a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  position: relative;
+}
+
+.lista-enlaces a:hover,
+.lista-enlaces a.activo {
+  color: #a855f7;
+  text-shadow: 0 0 10px #a855f7;
+}
+
+/* ===== Buscador ===== */
+.buscador-contenedor {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0 10px;
+}
+
+.buscador-input {
+  padding: 10px 15px;
+  border-radius: 12px;
+  border: none;
+  width: 60%;
+  font-size: 16px;
+  outline: none;
+  background-color: #1f1f1f;
+  color: white;
+  box-shadow: 0 0 12px rgba(168, 85, 247, 0.6);
+}
+
+/* ===== Sección de productos ===== */
+#productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+#productos > div {
+  background-color: #1f1b2e;
+  border-radius: 16px;
+  padding: 20px;
+  width: 180px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(124, 58, 237, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s;
+}
+
+#productos > div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.6);
+}
+
+#productos img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+#productos p {
+  color: white;
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+
+#productos button {
+  background-color: #a855f7;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#productos button:hover {
+  background-color: #c82ff2;
+}
+
+/* ===== Carrito ===== */
+h2 {
+  text-align: center;
+  margin-top: 40px;
+}
+
+#carrito {
+  list-style: none;
+  padding: 0 20px;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+#carrito li {
+  margin-bottom: 10px;
+}
+
+#carrito button {
+  margin-left: 10px;
+  background-color: #ef4444;
+  border: none;
+  padding: 6px 10px;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#carrito button:hover {
+  background-color: #dc2626;
+}
+
+/* ===== Total y Confirmar Compra ===== */
+#totalCompra {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+#confirmarCompra {
+  margin-top: 20px;
+  padding: 12px 20px;
+  background-color: #0071e3;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#confirmarCompra:hover {
+  background-color: #005bb5;
+}
+
+/* ===== Botón "Click aquí" Destacado con animación neón ===== */
+.boton-destacado {
+  position: relative;
+  background-color: #a855f7;
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 12px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: 0.3s ease;
+  box-shadow: 0 0 12px rgba(168, 85, 247, 0.7);
+}
+
+.boton-destacado:hover {
+  background-color: #c026d3;
+  box-shadow: 0 0 20px rgba(255, 0, 255, 0.7);
+}
+
+.boton-destacado::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, transparent 80%);
+  animation: brilloNeon 2s infinite;
+  z-index: 0;
+}
+
+.boton-destacado span {
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes brilloNeon {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    transform: translate(50%, 50%);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(100%, 100%);
+    opacity: 0;
+  }
+}

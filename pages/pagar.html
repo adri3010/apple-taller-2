@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pago - Apple Store</title>
+  <link rel="stylesheet" href="/css/pagas.css" />
+</head>
+<body>
+  <nav class="barra-navegacion">
+    <div class="contenedor-nav">
+      <a href="/index.html" class="logo-navegacion">
+        <img src="/img/iconoblanco.svg" alt="Logo Apple" />
+        Apple
+      </a>
+      <ul class="lista-enlaces">
+        <li><a href="/index.html">Inicio</a></li>
+        <li><a href="/pages/productos.html">Productos</a></li>
+        <li><a href="/pages/servicio.html">Servicio</a></li>
+        <li><a href="/pages/contacto.html">Contacto</a></li>
+        <li><a href="/pages/nosotros.html">Nosotros</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="formulario-pago">
+    <h2>Formulario de Pago</h2>
+    <form id="formularioPago" novalidate>
+      
+      <div class="input-group">
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" placeholder="Tu nombre completo" required />
+        <div id="error-nombre" class="error"></div>
+      </div>
+
+      <div class="input-group">
+        <label for="correo">Correo electrónico</label>
+        <input type="email" id="correo" placeholder="ejemplo@correo.com" required />
+        <div id="error-correo" class="error"></div>
+      </div>
+
+      <div class="input-group">
+        <label for="tarjeta">Número de tarjeta</label>
+        <input type="text" id="tarjeta" maxlength="19" placeholder="•••• •••• •••• ••••" required />
+        <div id="error-tarjeta" class="error"></div>
+      </div>
+
+      <div class="fila">
+        <div class="input-group">
+          <label for="vencimiento">Vencimiento</label>
+          <input type="month" id="vencimiento" required />
+          <div id="error-vencimiento" class="error"></div>
+        </div>
+
+        <div class="input-group">
+          <label for="cvv">CVV</label>
+          <input type="text" id="cvv" maxlength="3" placeholder="•••" required />
+          <div id="error-cvv" class="error"></div>
+        </div>
+      </div>
+
+      <button type="submit" disabled>Procesar Pago</button>
+    </form>
+  </main>
+
+ 
+  <div id="modalConfirmacion" class="modal-fondo">
+    <div class="modal">
+      <h3>Confirma tu pago</h3>
+      <p>¿Quieres confirmar la compra con los datos ingresados?</p>
+      <button class="confirmar" id="btnConfirmar">Confirmar</button>
+      <button class="editar" id="btnEditar">Editar</button>
+    </div>
+  </div>
+
+  <script src="/javascrip/pagar.js"></script>
+</body>
+</html>

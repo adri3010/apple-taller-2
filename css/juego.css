@@ -1,0 +1,92 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #1e1e1e;
+  color: rgb(126, 56, 245);
+}
+
+#juego {
+  width: 600px;
+  height: 400px;
+  margin: 20px auto;
+  position: relative;
+  border: 3px solid rgb(200, 19, 255);
+  background-color: #333;
+  overflow: hidden;
+}
+
+#cuadro {
+  width: 50px;
+  height: 50px;
+  
+  position: absolute;
+  cursor: pointer;
+  transition: top 0.1s, left 0.1s;
+}
+
+#mensaje {
+  font-size: 1.5em;
+  color: #ffffff;
+  margin-top: 20px;
+}
+/* NAVBAR GENERAL */
+.navbar {
+  background-color: #000;
+  padding: 1rem 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 0 10px #a855f7;
+}
+
+/* CONTENEDOR FLEX PARA LOGO Y MENÚ */
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+/* LOGO A LA IZQUIERDA */
+.navbar-logo .logo-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.navbar-logo img {
+  height: 40px;
+}
+
+.navbar-logo span {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+/* MENÚ CENTRADO ABSOLUTO */
+.navbar-menu {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navbar-menu ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu a {
+  color: white;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+/* EFECTO NEÓN MORADO */
+.navbar-menu a:hover {
+  color: #a855f7;
+  text-shadow: 0 0 5px #a855f7, 0 0 10px #a855f7, 0 0 15px #a855f7;
+}

@@ -1,0 +1,112 @@
+  <section class="productos-container">
+    <h1>Catálogo de Productos</h1>
+
+
+    <div class="grid-productos">
+
+     
+      <div class="producto" id="iphone15promax">
+        <img src="/img/iphone15pro.jpg" alt="iPhone 15 Pro Max">
+        <h2>iPhone 15 Pro Max</h2>
+        <p>$1,199</p>
+      </div>
+
+     
+      <div class="producto" id="iphonese">
+        <img src="/img/iphonese.jpg" alt="iPhone SE">
+        <h2>iPhone SE (2022)</h2>
+        <p>$429</p>
+      </div>
+
+      
+      <div class="producto" id="macbookairm3" >
+        <img src="/img/macbookairm3.webp" alt="MacBook Air M3">
+        <h2>MacBook Air M3</h2>
+        <p>$1,099</p>
+      </div>
+
+     
+      <div class="producto" id="macbookprom3">
+        <img src="/img/macbookprom3.jpg" alt="MacBook Pro M3">
+        <h2>MacBook Pro M3</h2>
+        <p>$1,599</p>
+      </div>
+
+      
+      <div class="producto" id="imacm3">
+        <img src="/img/imacm3.jpeg" alt="iMac M3">
+        <h2>iMac M3 (24")</h2>
+        <p>$1,299</p>
+      </div>
+
+      
+      <div class="producto" id="ipadairm2" >
+        <img src="/img/ipadairm2.png" alt="iPad Air M2">
+        <h2>iPad Air M2</h2>
+        <p>$599</p>
+      </div>
+
+      
+      <div class="producto" id="ipadprom5">
+        <img src="/img/ipadprom5.jpg" alt="iPad Pro M4">
+        <h2>iPad Pro M4</h2>
+        <p>$999</p>
+      </div>
+
+      
+      <div class="producto" id="watchseries9">
+        <img src="/img/watchseries9.jpg" alt="Apple Watch Series 9">
+        <h2>Apple Watch Series 9</h2>
+        <p>$399</p>
+      </div>
+
+      
+      <div class="producto" id="airpodspro2">
+        <img src="/img/airpodspro2.png" alt="AirPods Pro 2">
+        <h2>AirPods Pro (2da Gen)</h2>
+        <p>$249</p>
+      </div>
+
+<div class="producto" id="Apple Vision Pro">
+  <img src="/img/Apple Vision Pro.jpeg" alt="Apple Vision Pro">
+  <h2>Apple Vision Pro</h2>
+  <p>$3,499</p>
+</div>
+
+
+<div class="producto"id="Apple TV 4K" >
+  <img src="/img/Apple TV 4K.jpeg" alt="Apple TV 4K">
+  <h2>Apple TV 4K</h2>
+  <p>$1298</p>
+</div>
+
+
+<div class="producto" id="HomePod 2da Gen" >
+  <img src="/img/HomePod 2da Gen.jpeg" alt="HomePod 2da Generación">
+  <h2>HomePod (2da Gen)</h2>
+  <p>$299</p>
+</div>
+
+
+<div class="producto" id="HomePod Mini" >
+  <img src="/img/HomePod Mini.jpeg" alt="HomePod Mini">
+  <h2>HomePod Mini</h2>
+  <p>$99</p>
+</div>
+
+
+<div class="producto" id="AirTag" >
+  <img src="/img/AirTag.jpeg" alt="AirTag">
+  <h2>AirTag (1 unidad)</h2>
+  <p>$29</p>
+</div>
+
+
+<div class="producto" id="Apple Pencil 2da Gen">
+  <img src="/img/Apple Pencil 2da Gen.jpeg" alt="Apple Pencil 2">
+  <h2>Apple Pencil (2da Gen)</h2>
+  <p>$129</p>
+</div>
+
+    </div>
+  </section>

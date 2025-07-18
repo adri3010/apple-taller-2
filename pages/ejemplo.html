@@ -2,32 +2,28 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Productos Apple</title>
-  <link rel="stylesheet" href="/css/borrador.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Carrito de Productos Apple</title>
+  <link rel="stylesheet" href="/css/borrador.css" />
 </head>
 <body>
   <nav class="barra-navegacion">
     <div class="contenedor-nav">
-      <a class="logo-navegacion" href="#">
-        <img src="/img/iconoblanco.svg" alt="Logo">Apple Store
+      <a href="/index.html" class="logo-navegacion">
+        <img src="/img/iconoblanco.svg" alt="Logo Apple" />
+        Apple
       </a>
       <ul class="lista-enlaces">
-        <li><a href="/index.html" class="text-gray-700 hover:text-blue-600 dark:text-white">Inicio</a></li>
-        <li><a href="/pages/servicio.html" class="text-gray-700 hover:text-blue-600 dark:text-white">Servicio</a></li>
-        <li><a href="/pages/contacto.html" class="text-gray-700 hover:text-blue-600 dark:text-white">Contacto</a></li>
-        <li><a href="/pages/nosotros.html" class="text-gray-700 hover:text-blue-600 dark:text-white">Nosotros</a></li>
-         <li><a href="/pages/prueductoborrador.html" class="text-gray-700 hover:text-blue-600 dark:text-white">Productos</a></li>
-        
+        <li><a href="/index.html" class="activo">Inicio</a></li>
+        <li><a href="/pages/productos.html">Productos</a></li>
+        <li><a href="/pages/servicio.html">Servicio</a></li>
+        <li><a href="/pages/contacto.html">Contacto</a></li>
+        <li><a href="/pages/nosotros.html">Nosotros</a></li>
       </ul>
     </div>
   </nav>
 
-  <div class="buscador-contenedor">
-    <input type="text" id="buscador" class="buscador-input" placeholder="Buscar producto Apple..." />
-  </div>
-
- <div id="productos">
+  <div id="productos">
 
     <div>
       <img src="/img/iphone15pro.jpg" alt="iPhone 15 Pro Max" width="100" height="100" />
@@ -130,7 +126,7 @@
     <a href="/pages/pago.html" class="boton-pagar">Pagar</a>
   </div>
 
-  <!-- Firebase SDK -->
+  <!-- Firebase SDK (si lo vas a usar, sino puedes quitarlo) -->
   <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js"></script>
 
